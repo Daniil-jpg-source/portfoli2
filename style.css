@@ -100,7 +100,7 @@ body {
     padding-bottom: 8px;
 }
 .bio p, .interest p, .hobby p{
-    color: white;
+    color: black;
     line-height: 1.6;
     font-size: 16px;
 }
