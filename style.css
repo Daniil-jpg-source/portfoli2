@@ -273,3 +273,16 @@ body.dark-theme .project-card {
     background: rgba(255, 255, 255, 0.05); 
     border-color: rgba(255, 255, 255, 0.1);
 }
+body.dark-theme .bio p, .interest p, .hobby p {
+    color: white;
+    line-height: 1.6;
+    font-size: 16px;
+}
+body.dark-theme .skills li {
+     color: white;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    padding-left: 20px
+}
+    
