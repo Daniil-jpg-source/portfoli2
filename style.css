@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.one_str{
+    background: url("../image/back.png") center center/cover no-repeat;
+    flex: 1;
+}
+
+.container{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.one_str .container .header{
+    text-align: center;
+    color: #6666FF;
+    padding-top: 20px;
+    font-size: 36px;
+    transition: transform 0.5s ease-in-out;
+}
+/* первая анимация */
+.one_str .container .header:hover{
+    transform: scale(1.2);
+}
+
+.ava{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border: 4px solid mediumslateblue;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease-out;
+    
+}
+/* вторая анимация */
+.ava:hover{
+    transform: rotate(45deg);
+}
+.avatar_wrapper{
+    text-align: center;
+    margin-top: 50px;
+}
+.avatar_wrapper .item .descr{
+    color: #6666FF;
+    margin-top: 15px;
+    font-size: 25px;
+
+}
+/* третья анимация*/
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 1; }
+}  
+.avatar_wrapper .item .descr:hover{
+    animation: pulse 2s infinite alternate ease-in-out;
+
+}
+.info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.info .bio{
+    transition: transform 0.3s ease;
+
+}
+/* четвертая анимация*/
+.info .bio:hover{
+    transform: translateY(-20px);
+
+}
+.bio, .interest, .hobby, .skills{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    padding: 25px;
+    border: 1px solid aqua;
+    transition: transform 0.3s;
+}
+.bio h3, .interest h3, .hobby h3, .skills h3{
+    color: #a1c4e9;
+    font-size: 22px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid lime;
+    padding-bottom: 8px;
+}
+.bio p, .interest p, .hobby p{
+    color: white;
+    line-height: 1.6;
+    font-size: 16px;
+}
+.skills ul{
+    list-style: none;
+}
+.skills li{
+    color: white;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    padding-left: 20px;
+}
+header nav ul{
+    display: flex;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color:fuchsia;
+}
+#theme{
+    background-color: aqua;
+}
+footer {
+    background-color: blue;
+    padding: 10px;
+    text-align: center;
+
+}
+h1.proect{
+    text-align: center;
+}
+h1.cont{
+    text-align: center;
+}
+.contsec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    flex: 1;
+}
+.cont {
+    margin-bottom: 10vh;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+input, button{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid ;
+}
+.mycontacts ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+.mycontacts li {
+    margin-bottom: 10px;
+}
+.prj_str{
+    flex: 1;
+}
+
+.projects-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 0;
+}
+
+
+.project-card {
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px);          
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 25px;
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: white; 
+}
+
+.project-card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-color: fuchsia; 
+}
+
+.project-card h2 {
+    color: aqua; 
+    margin-bottom: 10px;
+}
+
+.tag {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #ccc;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.description {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.project-link {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid fuchsia;
+    transition: 0.3s;
+}
+
+.project-link:hover {
+    color: fuchsia;
+}
+
+.project-image {
+    width: 100%;
+    height: 200px; 
+    overflow: hidden; 
+    border-radius: 10px; 
+    margin-bottom: 20px;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.3s ease; 
+    display: block;
+}
+
+
+.project-card:hover .project-image img {
+    transform: scale(1.1); 
+}
+
+
+body.dark-theme {
+    background-color: #1a1a1a; 
+    color: #ffffff;           
+}
+
+
+body.dark-theme header {
+    background: #000000;
+}
+
+body.dark-theme .project-card {
+    background: rgba(255, 255, 255, 0.05); 
+    border-color: rgba(255, 255, 255, 0.1);
+}
